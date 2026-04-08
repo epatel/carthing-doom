@@ -2,7 +2,7 @@
 
 Run the classic Doom (shareware) on a Spotify Car Thing using WebAssembly.
 
-![Car Thing](https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Spotify_Car_Thing.jpg/320px-Spotify_Car_Thing.jpg)
+![carthing_doom.jpg](carthing_doom.jpg)
 
 ## How It Works
 
