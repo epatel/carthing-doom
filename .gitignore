@@ -1,0 +1,9 @@
+build-doom/
+inspiration/
+.venv/
+*.WAD
+*.wad
+node_modules/
+deskthing-doom/dist/
+deskthing-doom/node_modules/
+glancething-doom-client.zip

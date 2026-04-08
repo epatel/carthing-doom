@@ -1,0 +1,23 @@
+{
+  "id": "doom",
+  "label": "Doom",
+  "version": "1.0.0",
+  "description": "Classic Doom running on your Car Thing via WebAssembly",
+  "author": "carthing-doom",
+  "tags": [],
+  "platforms": [
+    { "platform": "windows", "architecture": ["x86_64"] },
+    { "platform": "linux", "architecture": ["x86_64", "aarch64"] },
+    { "platform": "mac", "architecture": ["x86_64", "aarch64"] }
+  ],
+  "template": "base",
+  "isWebApp": true,
+  "isLocalApp": false,
+  "isAudioSource": false,
+  "isScreenSaver": false,
+  "postinstall": false,
+  "requiredVersions": {
+    "server": ">=0.11.0",
+    "client": ">=0.11.0"
+  }
+}

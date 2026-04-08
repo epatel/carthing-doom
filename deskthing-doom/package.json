@@ -1,0 +1,21 @@
+{
+  "name": "deskthing-doom",
+  "version": "1.0.0",
+  "description": "Classic Doom for DeskThing / Car Thing",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "package": "npx @deskthing/cli package"
+  },
+  "dependencies": {
+    "@deskthing/client": "^0.11.0",
+    "@deskthing/server": "^0.11.0",
+    "@deskthing/types": "^0.11.18"
+  },
+  "devDependencies": {
+    "@deskthing/cli": "^0.11.0",
+    "typescript": "^5.4.0",
+    "vite": "^5.4.0"
+  }
+}

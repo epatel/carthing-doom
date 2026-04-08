@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Car Thing Test</title>
+    <style>
+        body {
+            margin: 0;
+            background: #1a1a2e;
+            color: #eee;
+            font-family: monospace;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 800px;
+        }
+        .info { text-align: center; }
+        h1 { font-size: 48px; color: #0f0; }
+        p { font-size: 24px; }
+        #events { font-size: 16px; color: #0ff; min-height: 100px; }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <h1>Car Thing Server</h1>
+        <p>Server is working!</p>
+        <p>Press buttons or turn dial:</p>
+        <div id="events"></div>
+    </div>
+    <script>
+        const eventsDiv = document.getElementById('events');
+        function log(msg) {
+            eventsDiv.textContent = msg + '\n' + eventsDiv.textContent;
+            if (eventsDiv.textContent.length > 500) {
+                eventsDiv.textContent = eventsDiv.textContent.slice(0, 500);
+            }
+        }
+        document.addEventListener('keydown', e => log('KEY: ' + e.code));
+        document.addEventListener('wheel', e => log('WHEEL: dx=' + e.deltaX + ' dy=' + e.deltaY));
+    </script>
+</body>
+</html>
